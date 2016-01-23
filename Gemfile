@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
+gem 'thin'
 
 gem 'jquery-rails'
 gem 'turbolinks'
