@@ -10,6 +10,7 @@ gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
 gem 'thin'
+gem 'devise'
 
 gem 'jquery-rails'
 gem 'turbolinks'
