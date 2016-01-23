@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Entereds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Create at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entereds.each do |entered| %>
+      <tr>
+        <td><%= entered.name %></td>
+        <td><%= entered.price %></td>
+        <td><%= entered.create_at %></td>
+        <td><%= link_to 'Show', entered %></td>
+        <td><%= link_to 'Edit', edit_entered_path(entered) %></td>
+        <td><%= link_to 'Destroy', entered, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entered', new_entered_path %>

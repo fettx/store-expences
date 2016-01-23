@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @entered.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @entered.price %>
+</p>
+
+<p>
+  <strong>Create at:</strong>
+  <%= @entered.create_at %>
+</p>
+
+<%= link_to 'Edit', edit_entered_path(@entered) %> |
+<%= link_to 'Back', entereds_path %>
